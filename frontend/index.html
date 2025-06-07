@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Management Panel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Welcome to the Server Management Panel</h1>
+
+    <h2>User Registration</h2>
+    <form id="registerForm">
+        <input type="text" id="regUsername" placeholder="Username" required>
+        <input type="password" id="regPassword" placeholder="Password" required>
+        <button type="submit">Register</button>
+        <div id="registerMessage"></div>
+    </form>
+
+    <h2>User Login</h2>
+    <form id="loginForm">
+        <input type="text" id="loginUsername" placeholder="Username" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button type="submit">Login</button>
+        <div id="loginMessage"></div>
+    </form>
+
+    <h2>Add Server</h2>
+    <form id="addServerForm">
+        <input type="text" id="serverName" placeholder="Server Name" required>
+        <input type="text" id="serverIp" placeholder="Server IP" required>
+        <button type="submit">Add Server</button>
+        <div id="addServerMessage"></div>
+    </form>
+
+    <h2>Server List</h2>
+    <button id="listServersBtn">List Servers</button>
+    <div id="serverList"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
